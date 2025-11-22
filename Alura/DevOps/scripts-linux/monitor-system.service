@@ -1,0 +1,14 @@
+# This file defines a systemd service that runs the system monitoring script.
+# It is of type 'oneshot', which means it runs the script once and finishes.
+# It is generally used in conjunction with a .timer file for periodic scheduling.
+
+[Unit]
+Description=Script de Monitoramento de Sistema
+Wants=monitoramento-sistema.timer
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/monitoramento-sistema.sh
+
+[Install]
+WantedBy=multi-user.target
