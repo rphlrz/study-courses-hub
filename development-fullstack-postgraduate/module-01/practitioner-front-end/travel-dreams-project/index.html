@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Dreams</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="mb-4">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark rounded-bottom shadow">
+            <div class="container-fluid">
+                <a class="navbar-brand fw-bold" href="#home">Travel Dreams</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mainNavbar">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#destinations" id="navbarDropdownDest" role="button" data-bs-toggle="dropdown" aria-expanded="false">Destinations</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#europe">Europe</a></li>
+                                <li><a class="dropdown-item" href="#asia">Asia</a></li>
+                                <li><a class="dropdown-item" href="#americas">Americas</a></li>
+                                <li><a class="dropdown-item" href="#africa">Africa</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#packages" id="navbarDropdownPack" role="button" data-bs-toggle="dropdown" aria-expanded="false">Travel Packages</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#budget">Budget Travel</a></li>
+                                <li><a class="dropdown-item" href="#luxury">Luxury Travel</a></li>
+                                <li><a class="dropdown-item" href="#adventure">Adventure Tours</a></li>
+                                <li><a class="dropdown-item" href="#family">Family Packages</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#cards">Latest Updates</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#services" id="navbarDropdownServ" role="button" data-bs-toggle="dropdown" aria-expanded="false">Services</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#flights">Flight Booking</a></li>
+                                <li><a class="dropdown-item" href="#hotels">Hotel Reservations</a></li>
+                                <li><a class="dropdown-item" href="#insurance">Travel Insurance</a></li>
+                                <li><a class="dropdown-item" href="#visa">Visa Assistance</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Bootstrap Carousel Start -->
+    <div id="mainCarousel" class="carousel slide mb-4 container-xxl" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner rounded shadow">
+            <div class="carousel-item active">
+                <img src="images/our-packages/img2.jpg" class="d-block w-100" alt="Mountain landscape">
+                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+                    <h5>Mountain Adventures</h5>
+                    <p>Explore breathtaking mountain landscapes and thrilling hikes.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/our-packages/img3.jpg" class="d-block w-100" alt="Tropical beach">
+                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+                    <h5>Tropical Paradises</h5>
+                    <p>Relax on pristine beaches and enjoy crystal-clear waters.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/our-packages/img4.jpg" class="d-block w-100" alt="Forest nature">
+                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+                    <h5>Wild Nature</h5>
+                    <p>Discover the wonders of untouched forests and wildlife.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- Bootstrap Carousel End -->
+
+    <!-- Main Hero Image -->
+    <figure>
+        <img src="images/our-packages/img1.jpg" alt="Beautiful travel destination" class="hero-image img-fluid shadow">
+        <figcaption class="text-center text-muted mt-2">Beautiful travel destination</figcaption>
+    </figure>
+
+    <section id="home">
+        <!-- Forms menu moved to navbar -->
+        <h2>Your Dream Travel Agency</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Quisquam, quos. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Quisquam, quos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos. Lorem ipsum dolor
+            sit amet consectetur adipisicing elit. Quisquam, quos.
+            <br><br>
+            <a href="https://www.google.com">Google</a>
+            <a href="https://br.lipsum.com/feed/html">Lorem Ipsum</a>
+        </p>
+
+        <!-- Travel Packages Table -->
+        <h3>Travel Packages Table</h3>
+        <table class="travel-table">
+            <caption class="caption-top fs-5 mb-2">Our Most Popular Travel Packages</caption>
+            <thead class="table-dark">
+                <tr>
+                    <th>Package</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                    <th>Duration</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Budget Travel</td>
+                    <td>Affordable trips for solo travelers and families</td>
+                    <td>$499</td>
+                    <td>5 days</td>
+                </tr>
+                <tr>
+                    <td>Luxury Travel</td>
+                    <td>Premium experiences with exclusive amenities</td>
+                    <td>$2,499</td>
+                    <td>7 days</td>
+                </tr>
+                <tr>
+                    <td>Adventure Tours</td>
+                    <td>Exciting activities in nature and wild places</td>
+                    <td>$1,299</td>
+                    <td>6 days</td>
+                </tr>
+                <tr>
+                    <td>Family Packages</td>
+                    <td>Fun and safe trips for all ages</td>
+                    <td>$899</td>
+                    <td>5 days</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="4" class="text-center fst-italic">Contact us for custom packages and group discounts!</td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <!-- Image Gallery -->
+        <h3 id="destinations">Popular Destinations</h3>
+        <div class="image-gallery">
+            <figure class="text-center">
+                <img src="images/our-packages/img2.jpg" alt="Mountain landscape" class="gallery-image img-fluid" onclick="openMountainGallery()" style="cursor: pointer;">
+                <figcaption class="mt-2 text-muted">Mountain landscape</figcaption>
+            </figure>
+            <figure class="text-center">
+                <img src="images/our-packages/img3.jpg" alt="Tropical beach" class="gallery-image img-fluid" onclick="openTropicalGallery()" style="cursor: pointer;">
+                <figcaption class="mt-2 text-muted">Tropical beach</figcaption>
+            </figure>
+            <figure class="text-center">
+                <img src="images/our-packages/img4.jpg" alt="Forest nature" class="gallery-image img-fluid" onclick="openForestGallery()" style="cursor: pointer;">
+                <figcaption class="mt-2 text-muted">Forest nature</figcaption>
+            </figure>
+            <figure class="text-center">
+                <img src="images/our-packages/img5.jpg" alt="City skyline" class="gallery-image img-fluid" onclick="openCityGallery()" style="cursor: pointer;">
+                <figcaption class="mt-2 text-muted">City skyline</figcaption>
+            </figure>
+        </div>
+
+        <hr>
+    </section>
+
+    <!-- Video Section -->
+    <section class="video-section" id="packages">
+        <h2>Travel Experiences</h2>
+        <p>Watch our videos and get inspired for your next adventure!</p>
+
+        <div class="video-gallery row g-3">
+            <div class="col-md-12">
+                <video controls poster="images/our-packages/img2.jpg" class="w-100 rounded">
+                    <source src="videos/travel-video1.mp4" type="video/mp4">
+                    <source src="videos/travel-video1.webm" type="video/webm">
+                    Your browser does not support the video element.
+                </video>
+                <div class="video-caption">Mountain Adventures</div>
+            </div>
+            <div class="col-md-12">
+                <video controls poster="images/our-packages/img3.jpg" class="w-100 rounded">
+                    <source src="videos/travel-video2.mp4" type="video/mp4">
+                    <source src="videos/travel-video2.webm" type="video/webm">
+                    Your browser does not support the video element.
+                </video>
+                <div class="video-caption">Tropical Paradises</div>
+            </div>
+            <div class="col-md-12">
+
+                <video controls poster="images/our-packages/img4.jpg" class="w-100 rounded">
+                    <source src="videos/travel-video3.mp4" type="video/mp4">
+                    <source src="videos/travel-video3.webm" type="video/webm">
+                    Your browser does not support the video element.
+                </video>
+                <div class="video-caption">Wild Nature</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cards Section -->
+    <section class="cards-section py-5" id="cards">
+        <div class="container">
+            <h2 class="text-center mb-5">Latest Travel Updates</h2>
+            <p class="text-center mb-5">Stay informed about our latest travel packages, destinations, and special offers.</p>
+            
+            <div class="row g-4">
+                <!-- Card 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 shadow-sm">
+                        <img src="images/our-packages/img2.jpg" class="card-img-top" alt="Mountain Adventures">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Mountain Adventures Package</h5>
+                            <p class="card-text flex-grow-1">Discover breathtaking mountain landscapes with our exclusive adventure package. Includes guided hikes, equipment rental, and accommodation in mountain lodges.</p>
+                            <div class="mt-auto">
+                                <small class="text-muted">Last updated: January 15, 2025</small>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-transparent">
+                            <button class="btn btn-primary" onclick="openMountainPackage()">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 shadow-sm">
+                        <img src="images/our-packages/img3.jpg" class="card-img-top" alt="Tropical Paradise">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Tropical Paradise Getaway</h5>
+                            <p class="card-text flex-grow-1">Escape to pristine beaches and crystal-clear waters. This all-inclusive package offers luxury resorts, water activities, and tropical cuisine experiences.</p>
+                            <div class="mt-auto">
+                                <small class="text-muted">Last updated: January 12, 2025</small>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-transparent">
+                            <button class="btn btn-primary" onclick="openTropicalPackage()">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 shadow-sm">
+                        <img src="images/our-packages/img4.jpg" class="card-img-top" alt="Wild Nature">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Wild Nature Expedition</h5>
+                            <p class="card-text flex-grow-1">Explore untouched forests and encounter wildlife in their natural habitat. Professional guides, photography workshops, and eco-friendly accommodations included.</p>
+                            <div class="mt-auto">
+                                <small class="text-muted">Last updated: January 10, 2025</small>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-transparent">
+                            <button class="btn btn-primary" onclick="openWildNaturePackage()">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 shadow-sm">
+                        <img src="images/our-packages/img5.jpg" class="card-img-top" alt="City Explorer">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">City Explorer Experience</h5>
+                            <p class="card-text flex-grow-1">Immerse yourself in vibrant city life with our urban adventure package. Cultural tours, local cuisine, and premium city center accommodations.</p>
+                            <div class="mt-auto">
+                                <small class="text-muted">Last updated: January 8, 2025</small>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-transparent">
+                            <button class="btn btn-primary" onclick="openCityExplorerPackage()">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 shadow-sm">
+                        <img src="images/our-packages/img1.jpg" class="card-img-top" alt="Cultural Heritage">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Cultural Heritage Tour</h5>
+                            <p class="card-text flex-grow-1">Discover rich cultural traditions and historical landmarks. Expert local guides, museum visits, and authentic cultural experiences await you.</p>
+                            <div class="mt-auto">
+                                <small class="text-muted">Last updated: January 5, 2025</small>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-transparent">
+                            <button class="btn btn-primary" onclick="openCulturalPackage()">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 shadow-sm">
+                        <img src="images/our-packages/img2.jpg" class="card-img-top" alt="Family Adventure">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Family Adventure Package</h5>
+                            <p class="card-text flex-grow-1">Perfect for families with children of all ages. Safe activities, family-friendly accommodations, and special programs designed for kids and parents.</p>
+                            <div class="mt-auto">
+                                <small class="text-muted">Last updated: January 3, 2025</small>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-transparent">
+                            <button class="btn btn-primary" onclick="openFamilyPackage()">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lists Section -->
+    <section class="lists-section" id="services">
+        <h2>Useful Information for Your Trip</h2>
+        <p>Organize your trip with our practical and informative lists.</p>
+
+        <div class="list-grid">
+            <!-- Unordered List -->
+            <div class="list-container">
+                <h4>📋 Essential Travel Items</h4>
+                <ul>
+                    <li>Passport and identity documents</li>
+                    <li>Flight tickets and hotel reservations</li>
+                    <li>Clothes suitable for the climate</li>
+                    <li>Personal medications</li>
+                    <li>Phone charger and adapters</li>
+                    <li>Camera</li>
+                    <li>Local currency and cards</li>
+                    <li>Travel insurance</li>
+                </ul>
+            </div>
+
+            <!-- Ordered List -->
+            <div class="list-container">
+                <h4>🗺️ 7-Day Travel Plan</h4>
+                <ol>
+                    <li>Arrival and hotel check-in</li>
+                    <li>Historic city tour</li>
+                    <li>Visit to local museums</li>
+                    <li>Excursion to tourist attractions</li>
+                    <li>Free day for shopping</li>
+                    <li>Adventure activities</li>
+                    <li>Check-out and return</li>
+                </ol>
+            </div>
+
+            <!-- Description List -->
+            <div class="list-container">
+                <h4>🏨 Types of Accommodation</h4>
+                <dl>
+                    <dt>5-Star Hotel</dt>
+                    <dd>Maximum luxury with premium services, spa, gourmet restaurants and privileged location.</dd>
+
+                    <dt>Family Inn</dt>
+                    <dd>Welcoming and personalized environment, ideal for those seeking comfort and proximity to local
+                        culture.</dd>
+
+                    <dt>Hostel</dt>
+                    <dd>Perfect economical option for backpackers, with shared rooms and common areas for socializing.
+                    </dd>
+
+                    <dt>All-Inclusive Resort</dt>
+                    <dd>Everything included: meals, drinks, activities and entertainment in one place.</dd>
+
+                    <dt>Airbnb</dt>
+                    <dd>Unique experience of living like a local, with apartments or entire houses to rent.</dd>
+                </dl>
+            </div>
+
+            <!-- Nested Unordered List -->
+            <div class="list-container">
+                <h4>🌍 Popular Destinations</h4>
+                <ul>
+                    <li>Europe
+                        <ul>
+                            <li>Paris, France</li>
+                            <li>Rome, Italy</li>
+                            <li>London, England</li>
+                        </ul>
+                    </li>
+                    <li>North America
+                        <ul>
+                            <li>New York, USA</li>
+                            <li>Toronto, Canada</li>
+                            <li>Mexico City, Mexico</li>
+                        </ul>
+                    </li>
+                    <li>Asia
+                        <ul>
+                            <li>Tokyo, Japan</li>
+                            <li>Bangkok, Thailand</li>
+                            <li>Singapore</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Ordered List with Letters -->
+            <div class="list-container">
+                <h4>✈️ Pre-Trip Checklist</h4>
+                <ol type="A">
+                    <li>Check passport validity</li>
+                    <li>Do online check-in</li>
+                    <li>Confirm hotel reservations</li>
+                    <li>Check weather forecast</li>
+                    <li>Inform bank about travel</li>
+                </ol>
+            </div>
+
+            <!-- Description List with Multiple DDs -->
+            <div class="list-container">
+                <h4>💰 Travel Costs</h4>
+                <dl>
+                    <dt>Transportation</dt>
+                    <dd>Flight tickets: $200-500</dd>
+                    <dd>Local transport: $15-50/day</dd>
+
+                    <dt>Accommodation</dt>
+                    <dd>3-star hotel: $40-80/night</dd>
+                    <dd>5-star hotel: $100-200/night</dd>
+
+                    <dt>Food</dt>
+                    <dd>Basic meals: $10-20/day</dd>
+                    <dd>Fine dining: $30-80/day</dd>
+                </dl>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="custom-section">
+        <h2>About Travel Dreams</h2>
+        <p>We are a passionate team of travel experts dedicated to making your dream vacations come true. With over 10
+            years of experience in the travel industry, we specialize in creating unforgettable experiences tailored to
+            your needs and budget.</p>
+        <p>Our mission is to provide exceptional travel services while promoting sustainable tourism and cultural
+            exchange around the world.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="custom-section">
+        <h2>Contact Us</h2>
+        <p>Ready to start your next adventure? Get in touch with our travel experts!</p>
+        <ul class="contact-list">
+            <li>📧 Email: info@traveldreams.com</li>
+            <li>📞 Phone: +1 (555) 123-4567</li>
+            <li>📍 Address: 123 Travel Street, Adventure City, AC 12345</li>
+            <li>🕒 Hours: Monday - Friday: 9:00 AM - 6:00 PM</li>
+        </ul>
+        <div class="text-center mt-4">
+            <button class="btn btn-primary me-2" data-bs-toggle="modal" data-bs-target="#contactModal">Enviar Mensagem</button>
+            <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#bookingModal">Fazer Reserva</button>
+        </div>
+    </section>
+
+    <footer class="mt-5 py-4 bg-dark text-white text-center rounded-top shadow">
+        <p class="mb-0">Copyright 2025 Travel Dreams</p>
+    </footer>
+    <section id="forms" class="custom-section">
+        <h2>HTML Forms Guide</h2>
+        <p>This section covers the basics of HTML forms and the main types of input fields.</p>
+
+        <h3 id="forms-structure">1. What are forms? Basic structure of a form</h3>
+        <p>An HTML form is used to collect user input. The basic structure is as follows:</p>
+        <pre><code>         &lt;form action="/submit" method="post"&gt;
+            &lt;!-- form fields here --&gt;
+         &lt;/form&gt;</code></pre>
+
+        <h3 id="forms-fields">2. Field types for data submission: Text, Email, Date, Number, Password</h3>
+        <form method="post" action="/submit-form">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name"><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="birthdate">Date of Birth:</label>
+                <input type="date" id="birthdate" name="birthdate" required><br><br>
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" required><br><br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required><br><br>
+                <label for="comments">Comments:</label>
+                <textarea id="comments" name="comments" rows="4" cols="40"
+                    placeholder="Enter your comments here..."></textarea><br><br>
+            </fieldset>
+            <button type="submit">Submit</button>
+        </form>
+
+        <h3 id="forms-checkboxes">3. Field types for data submission: Checkboxes</h3>
+        <form method="post" action="/submit-checkboxes">
+            <label><input type="checkbox" name="interests" value="travel"> Travel</label>
+            <label><input type="checkbox" name="interests" value="sports"> Sports</label>
+            <label><input type="checkbox" name="interests" value="music"> Music</label>
+            <br><button type="submit">Submit</button>
+        </form>
+
+        <h3 id="forms-radio">4. Field types for data submission: Radio Buttons</h3>
+        <form method="post" action="/submit-radio">
+            <label><input type="radio" name="gender" value="male"> Male</label>
+            <label><input type="radio" name="gender" value="female"> Female</label>
+            <label><input type="radio" name="gender" value="other"> Other</label>
+            <br><button type="submit">Submit</button>
+        </form>
+
+        <h3 id="forms-select">5. Field types for data submission: Dropdown List</h3>
+        <form method="post" action="/submit-select">
+            <label for="country">Choose your country:</label>
+            <select id="country" name="country">
+                <option value="" disabled selected>Select your country</option>
+                <option value="usa">United States</option>
+                <option value="uk">United Kingdom</option>
+                <option value="brazil">Brazil</option>
+                <option value="japan">Japan</option>
+            </select>
+            <br><button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- Bootstrap Modals -->
+    
+    <!-- Package Details Modal -->
+    <div class="modal fade" id="packageModal" tabindex="-1" aria-labelledby="packageModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="packageModalLabel">Detalhes do Pacote</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img id="packageImage" src="" class="img-fluid rounded mb-3" alt="Package Image">
+                        </div>
+                        <div class="col-md-6">
+                            <h4 id="packageTitle" class="text-primary"></h4>
+                            <p id="packageDescription" class="text-muted"></p>
+                            <div class="mb-3">
+                                <h6>Inclui:</h6>
+                                <ul id="packageIncludes" class="list-unstyled">
+                                    <!-- Dynamic content -->
+                                </ul>
+                            </div>
+                            <div class="mb-3">
+                                <h6>Duração:</h6>
+                                <span id="packageDuration" class="badge bg-info"></span>
+                            </div>
+                            <div class="mb-3">
+                                <h6>Preço:</h6>
+                                <span id="packagePrice" class="h5 text-success"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-primary">Reservar Agora</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Modal -->
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="contactModalLabel">Entre em Contato</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="contactForm">
+                        <div class="mb-3">
+                            <label for="contactName" class="form-label">Nome Completo</label>
+                            <input type="text" class="form-control" id="contactName" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="contactEmail" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="contactEmail" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="contactPhone" class="form-label">Telefone</label>
+                            <input type="tel" class="form-control" id="contactPhone">
+                        </div>
+                        <div class="mb-3">
+                            <label for="contactSubject" class="form-label">Assunto</label>
+                            <select class="form-select" id="contactSubject" required>
+                                <option value="">Selecione um assunto</option>
+                                <option value="package">Informações sobre Pacotes</option>
+                                <option value="booking">Reserva</option>
+                                <option value="custom">Pacote Personalizado</option>
+                                <option value="support">Suporte</option>
+                                <option value="other">Outro</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="contactMessage" class="form-label">Mensagem</label>
+                            <textarea class="form-control" id="contactMessage" rows="4" required></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary" onclick="submitContactForm()">Enviar Mensagem</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Image Gallery Modal -->
+    <div class="modal fade" id="galleryModal" tabindex="-1" aria-labelledby="galleryModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="galleryModalLabel">Galeria de Imagens</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img id="galleryImage" src="" class="img-fluid rounded" alt="Gallery Image" style="max-height: 70vh;">
+                    <div class="mt-3">
+                        <h6 id="galleryCaption" class="text-muted"></h6>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Destination Info Modal -->
+    <div class="modal fade" id="destinationModal" tabindex="-1" aria-labelledby="destinationModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="destinationModalLabel">Informações do Destino</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img id="destinationImage" src="" class="img-fluid rounded mb-3" alt="Destination Image">
+                        </div>
+                        <div class="col-md-8">
+                            <h4 id="destinationName" class="text-primary"></h4>
+                            <p id="destinationDescription" class="text-muted"></p>
+                            
+                            <div class="row">
+                                <div class="col-6">
+                                    <h6>🌡️ Clima</h6>
+                                    <p id="destinationClimate" class="small"></p>
+                                </div>
+                                <div class="col-6">
+                                    <h6>💰 Custo Médio</h6>
+                                    <p id="destinationCost" class="small"></p>
+                                </div>
+                            </div>
+                            
+                            <div class="mt-3">
+                                <h6>🎯 Principais Atrações</h6>
+                                <ul id="destinationAttractions" class="list-unstyled">
+                                    <!-- Dynamic content -->
+                                </ul>
+                            </div>
+                            
+                            <div class="mt-3">
+                                <h6>📅 Melhor Época para Visitar</h6>
+                                <p id="destinationBestTime" class="small"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-primary">Ver Pacotes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Booking Modal -->
+    <div class="modal fade" id="bookingModal" tabindex="-1" aria-labelledby="bookingModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="bookingModalLabel">Reservar Pacote</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="bookingForm">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h6>Informações Pessoais</h6>
+                                <div class="mb-3">
+                                    <label for="bookingName" class="form-label">Nome Completo</label>
+                                    <input type="text" class="form-control" id="bookingName" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="bookingEmail" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="bookingEmail" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="bookingPhone" class="form-label">Telefone</label>
+                                    <input type="tel" class="form-control" id="bookingPhone" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <h6>Detalhes da Viagem</h6>
+                                <div class="mb-3">
+                                    <label for="bookingDate" class="form-label">Data de Partida</label>
+                                    <input type="date" class="form-control" id="bookingDate" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="bookingTravelers" class="form-label">Número de Viajantes</label>
+                                    <select class="form-select" id="bookingTravelers" required>
+                                        <option value="">Selecione</option>
+                                        <option value="1">1 Pessoa</option>
+                                        <option value="2">2 Pessoas</option>
+                                        <option value="3">3 Pessoas</option>
+                                        <option value="4">4 Pessoas</option>
+                                        <option value="5+">5+ Pessoas</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="bookingSpecial" class="form-label">Observações Especiais</label>
+                                    <textarea class="form-control" id="bookingSpecial" rows="3"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-success" onclick="submitBooking()">Confirmar Reserva</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <!-- Custom JavaScript for Modals -->
+    <script>
+        // Package Details Modal
+        function openPackageModal(title, description, image, duration, price, includes) {
+            document.getElementById('packageTitle').textContent = title;
+            document.getElementById('packageDescription').textContent = description;
+            document.getElementById('packageImage').src = image;
+            document.getElementById('packageDuration').textContent = duration;
+            document.getElementById('packagePrice').textContent = price;
+            
+            const includesList = document.getElementById('packageIncludes');
+            includesList.innerHTML = '';
+            includes.forEach(item => {
+                const li = document.createElement('li');
+                li.innerHTML = '✓ ' + item;
+                includesList.appendChild(li);
+            });
+            
+            const packageModal = new bootstrap.Modal(document.getElementById('packageModal'));
+            packageModal.show();
+        }
+
+        // Gallery Modal
+        function openGalleryModal(imageSrc, caption) {
+            document.getElementById('galleryImage').src = imageSrc;
+            document.getElementById('galleryCaption').textContent = caption;
+            
+            const galleryModal = new bootstrap.Modal(document.getElementById('galleryModal'));
+            galleryModal.show();
+        }
+
+        // Destination Modal
+        function openDestinationModal(name, description, image, climate, cost, attractions, bestTime) {
+            document.getElementById('destinationName').textContent = name;
+            document.getElementById('destinationDescription').textContent = description;
+            document.getElementById('destinationImage').src = image;
+            document.getElementById('destinationClimate').textContent = climate;
+            document.getElementById('destinationCost').textContent = cost;
+            document.getElementById('destinationBestTime').textContent = bestTime;
+            
+            const attractionsList = document.getElementById('destinationAttractions');
+            attractionsList.innerHTML = '';
+            attractions.forEach(attraction => {
+                const li = document.createElement('li');
+                li.innerHTML = '🎯 ' + attraction;
+                attractionsList.appendChild(li);
+            });
+            
+            const destinationModal = new bootstrap.Modal(document.getElementById('destinationModal'));
+            destinationModal.show();
+        }
+
+        // Contact Form Submission
+        function submitContactForm() {
+            const name = document.getElementById('contactName').value;
+            const email = document.getElementById('contactEmail').value;
+            const phone = document.getElementById('contactPhone').value;
+            const subject = document.getElementById('contactSubject').value;
+            const message = document.getElementById('contactMessage').value;
+            
+            if (name && email && subject && message) {
+                alert('Obrigado pela sua mensagem, ' + name + '! Entraremos em contato em breve.');
+                
+                // Reset form
+                document.getElementById('contactForm').reset();
+                
+                // Close modal
+                const contactModal = bootstrap.Modal.getInstance(document.getElementById('contactModal'));
+                contactModal.hide();
+            } else {
+                alert('Por favor, preencha todos os campos obrigatórios.');
+            }
+        }
+
+        // Booking Form Submission
+        function submitBooking() {
+            const name = document.getElementById('bookingName').value;
+            const email = document.getElementById('bookingEmail').value;
+            const phone = document.getElementById('bookingPhone').value;
+            const date = document.getElementById('bookingDate').value;
+            const travelers = document.getElementById('bookingTravelers').value;
+            
+            if (name && email && phone && date && travelers) {
+                alert('Reserva confirmada para ' + name + '! Enviaremos os detalhes por email.');
+                
+                // Reset form
+                document.getElementById('bookingForm').reset();
+                
+                // Close modal
+                const bookingModal = bootstrap.Modal.getInstance(document.getElementById('bookingModal'));
+                bookingModal.hide();
+            } else {
+                alert('Por favor, preencha todos os campos obrigatórios.');
+            }
+        }
+
+        // Package Modal Functions
+        function openMountainPackage() {
+            openPackageModal(
+                'Mountain Adventures Package',
+                'Discover breathtaking mountain landscapes with our exclusive adventure package. Includes guided hikes, equipment rental, and accommodation in mountain lodges.',
+                'images/our-packages/img2.jpg',
+                '7 days',
+                '$1,299',
+                ['Guided mountain hikes', 'Professional equipment rental', 'Mountain lodge accommodation', 'Expert local guides', 'Transportation to trailheads', 'Safety equipment and insurance']
+            );
+        }
+
+        function openTropicalPackage() {
+            openPackageModal(
+                'Tropical Paradise Getaway',
+                'Escape to pristine beaches and crystal-clear waters. This all-inclusive package offers luxury resorts, water activities, and tropical cuisine experiences.',
+                'images/our-packages/img3.jpg',
+                '5 days',
+                '$2,499',
+                ['Luxury beachfront resort', 'All meals included', 'Water sports activities', 'Snorkeling equipment', 'Airport transfers', 'Spa treatments']
+            );
+        }
+
+        function openWildNaturePackage() {
+            openPackageModal(
+                'Wild Nature Expedition',
+                'Explore untouched forests and encounter wildlife in their natural habitat. Professional guides, photography workshops, and eco-friendly accommodations included.',
+                'images/our-packages/img4.jpg',
+                '6 days',
+                '$1,599',
+                ['Wildlife photography workshops', 'Expert naturalist guides', 'Eco-friendly accommodations', 'Night safari experiences', 'Bird watching sessions', 'Conservation education']
+            );
+        }
+
+        function openCityExplorerPackage() {
+            openPackageModal(
+                'City Explorer Experience',
+                'Immerse yourself in vibrant city life with our urban adventure package. Cultural tours, local cuisine, and premium city center accommodations.',
+                'images/our-packages/img5.jpg',
+                '4 days',
+                '$899',
+                ['City center hotel', 'Cultural walking tours', 'Local cuisine experiences', 'Museum passes', 'Public transport cards', 'Shopping guide']
+            );
+        }
+
+        function openCulturalPackage() {
+            openPackageModal(
+                'Cultural Heritage Tour',
+                'Discover rich cultural traditions and historical landmarks. Expert local guides, museum visits, and authentic cultural experiences await you.',
+                'images/our-packages/img1.jpg',
+                '5 days',
+                '$1,199',
+                ['Expert cultural guides', 'Museum entrance fees', 'Traditional meals', 'Historical site visits', 'Cultural workshops', 'Local artisan visits']
+            );
+        }
+
+        function openFamilyPackage() {
+            openPackageModal(
+                'Family Adventure Package',
+                'Perfect for families with children of all ages. Safe activities, family-friendly accommodations, and special programs designed for kids and parents.',
+                'images/our-packages/img2.jpg',
+                '6 days',
+                '$1,499',
+                ['Family-friendly accommodations', 'Kids activities', 'Child-safe equipment', 'Family meals', 'Educational programs', '24/7 family support']
+            );
+        }
+
+        // Gallery Modal Functions
+        function openMountainGallery() {
+            openGalleryModal('images/our-packages/img2.jpg', 'Mountain landscape');
+        }
+
+        function openTropicalGallery() {
+            openGalleryModal('images/our-packages/img3.jpg', 'Tropical beach');
+        }
+
+        function openForestGallery() {
+            openGalleryModal('images/our-packages/img4.jpg', 'Forest nature');
+        }
+
+        function openCityGallery() {
+            openGalleryModal('images/our-packages/img5.jpg', 'City skyline');
+        }
+
+        // Add click handlers for destination info (example)
+        document.addEventListener('DOMContentLoaded', function() {
+            // Example: Add destination info to some elements
+            const destinationButtons = document.querySelectorAll('[data-destination]');
+            destinationButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const destination = this.getAttribute('data-destination');
+                    // You can customize this based on the destination
+                    openDestinationModal(
+                        'Paris, France',
+                        'The City of Light offers romantic architecture, world-class cuisine, and iconic landmarks.',
+                        'images/our-packages/img1.jpg',
+                        'Temperate climate, best in spring and fall',
+                        '$150-300 per day',
+                        ['Eiffel Tower', 'Louvre Museum', 'Notre-Dame Cathedral', 'Champs-Élysées', 'Montmartre'],
+                        'April to June and September to November'
+                    );
+                });
+            });
+        });
+    </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+
+</html>
