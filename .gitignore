@@ -13,7 +13,7 @@ __pycache__/
 node_modules/
 
 # Environment
-.env
+.env*
 .vscode/
 .idea/
 
@@ -34,3 +34,28 @@ coverage/
 # Cache
 .cache/
 .parcel-cache/
+
+# Dependencies
+/node_modules
+/dist
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# Testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# vercel
+/.vercel/
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
