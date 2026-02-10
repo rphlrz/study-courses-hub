@@ -1,0 +1,59 @@
+<div class="container">
+    <mat-card>
+        <mat-card-header>
+            <mat-card-title>Formulário de Usuário</mat-card-title>
+        </mat-card-header>
+
+        <mat-card-content>
+            <form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+                <div class="form-field">
+                    <label for="name">Nome</label>
+                    <input id="name" type="text" formControlName="name" placeholder="Digite seu nome">
+                    <span class="error" *ngIf="submitted && f['name'].errors?.['required']">Nome é obrigatório</span>
+                </div>
+
+                <div class="form-field">
+                    <label for="email">Email</label>
+                    <input id="email" type="email" formControlName="email" placeholder="Digite seu email">
+                    <span class="error" *ngIf="submitted && f['email'].errors?.['required']">Email é obrigatório</span>
+                    <span class="error" *ngIf="submitted && f['email'].errors?.['email']">Email inválido</span>
+                </div>
+
+                <div class="form-field">
+                    <label for="password">Senha</label>
+                    <input id="password" type="password" formControlName="password" placeholder="Digite sua senha">
+                    <span class="error" *ngIf="submitted && f['password'].errors?.['required']">Senha é
+                        obrigatória</span>
+                    <span class="error" *ngIf="submitted && f['password'].errors?.['minlength']">Mínimo 6
+                        caracteres</span>
+                    <span class="error" *ngIf="submitted && f['password'].errors?.['strongPassword']">Senha deve conter
+                        maiúscula, minúscula, número e caractere especial</span>
+                </div>
+
+                <div class="form-field">
+                    <label for="phone">Telefone</label>
+                    <input id="phone" type="text" formControlName="phone" placeholder="Digite seu telefone"
+                        mask="(00) 00000-0000">
+                    <span class="error" *ngIf="submitted && f['phone'].errors?.['required']">Telefone é
+                        obrigatório</span>
+                    <span class="error" *ngIf="submitted && f['phone'].errors?.['pattern']">Telefone inválido</span>
+                </div>
+
+                <mat-divider></mat-divider>
+
+                <div class="actions">
+                    <button mat-raised-button color="primary" type="submit">
+                        <mat-icon>send</mat-icon>
+                        Enviar
+                    </button>
+                    <span *ngIf="totalErrors > 0" matBadge="{{totalErrors}}" matBadgeColor="warn">Erros</span>
+                </div>
+            </form>
+
+            <div *ngIf="apiResponse" class="response">
+                <h3>Resposta da API:</h3>
+                <pre>{{ apiResponse | json }}</pre>
+            </div>
+        </mat-card-content>
+    </mat-card>
+</div>
