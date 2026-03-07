@@ -1,0 +1,42 @@
+<!--Copied from user-list.component.html and changed the names and fields to match the teachers module-->
+<div class="container">
+  <div class="py-3 text-center">
+    <h3>Evaluation Registration</h3>
+  </div>
+  <div class="row">
+    <div class="col-12 d-flex align-content-end justify-content-end pb-5">
+      <a class="btn btn-primary" [href]="'/addEvaluation'">REGISTER EVALUATION</a>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12 mb-12">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col"># User</th>
+            <th scope="col"># Course</th>
+            <th scope="col">Concept</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let evaluation of evaluations">
+            <th scope="row">{{evaluation.id}}</th>
+            <td>{{evaluation.user_id}}</td>
+            <td>{{evaluation.course_id}}</td>
+            <td>{{evaluation.concept}}</td>
+            <td>
+              <a class="btn btn-outline-primary" [href]="'/addEvaluation?id='+evaluation.id">
+                <fa-icon [icon]="faPencil"></fa-icon>
+              </a>
+              <button type="button" class="btn btn-outline-danger" data-toggle="confirmation" data-placement="right"
+                (click)="delete(evaluation.id)">
+                <fa-icon [icon]="faTrash"></fa-icon>
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
