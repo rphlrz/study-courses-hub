@@ -1,4 +1,5 @@
-//import { openai } from "@ai-sdk/openai";
+import { Readable } from "node:stream";
+
 import { google } from "@ai-sdk/google";
 import {
   convertToModelMessages,
@@ -97,7 +98,7 @@ export const aiRoutes = async (app: FastifyInstance) => {
 
       const result = streamText({
         //model: openai("gpt-4o-mini"),
-        model: google("gemini-2.0-flash"),
+        model: google("gemini-1.5-flash"),
         system: SYSTEM_PROMPT,
         messages: await convertToModelMessages(messages),
         stopWhen: stepCountIs(10),
@@ -210,8 +211,11 @@ export const aiRoutes = async (app: FastifyInstance) => {
 
       const response = result.toUIMessageStreamResponse();
       reply.status(response.status);
-      response.headers.forEach((value, key) => reply.header(key, value));
-      return reply.send(response.body);
+      response.headers.forEach((value: string, key: string) => reply.header(key, value));
+      if (response.body) {
+        return reply.send(Readable.fromWeb(response.body as import('stream/web').ReadableStream));
+      }
+      return reply.send();
     },
   });
 };
