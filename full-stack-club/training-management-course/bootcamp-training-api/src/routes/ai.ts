@@ -97,7 +97,7 @@ export const aiRoutes = async (app: FastifyInstance) => {
 
       const result = streamText({
         //model: openai("gpt-4o-mini"),
-        model: google("gemini-2.5-flash"),
+        model: google("gemini-2.0-flash"),
         system: SYSTEM_PROMPT,
         messages: await convertToModelMessages(messages),
         stopWhen: stepCountIs(10),
